@@ -3,7 +3,7 @@ import sys
 import shutil
 import pathlib
 
-from colorama import Fore
+from .color import Color
 
 
 def get_sources_and_destination() -> tuple[list[str], str]:
@@ -13,12 +13,12 @@ def get_sources_and_destination() -> tuple[list[str], str]:
 
 def log_move(source_path: str, source_to_destination_path: str) -> None:
     """Log when files are moved."""
-    print(f"{Fore.YELLOW}{source_path} {Fore.RESET}→ {Fore.GREEN}{source_to_destination_path}{Fore.RESET}")
+    print(f"{Color.YELLOW}{source_path} {Color.RESET}→ {Color.GREEN}{source_to_destination_path}{Color.RESET}")
 
 
 def log_not_found(path: str) -> None:
     """Log when a path/file doesn't exist."""
-    print(f"{Fore.RED}Could not find {Fore.YELLOW}{path}{Fore.RESET}.")
+    print(f"{Color.RED}Could not find {Color.YELLOW}{path}{Color.RESET}.")
 
 
 def main() -> None:
