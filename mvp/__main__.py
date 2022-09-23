@@ -12,7 +12,7 @@ def get_sources_and_destination() -> tuple[list[str], str]:
 
 
 def log_move(source_path: str, source_to_destination_path: str) -> None:
-    """Log when files are moved."""
+    """Log when a file is moved."""
     print(f"{Color.YELLOW}{source_path} {Color.RESET}→ {Color.GREEN}{source_to_destination_path}{Color.RESET}")
 
 
