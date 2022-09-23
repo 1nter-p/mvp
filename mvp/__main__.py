@@ -8,7 +8,7 @@ from .color import Color
 
 def get_sources_and_destination() -> tuple[list[str], str]:
     """Get the sources and destination from :code:`sys.argv`"""
-    return (sys.argv[1:-1], sys.argv[-1])
+    return sys.argv[1:-1], sys.argv[-1]
 
 
 def log_move(source_path: str, source_to_destination_path: str) -> None:
