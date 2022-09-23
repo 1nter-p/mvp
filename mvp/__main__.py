@@ -18,7 +18,7 @@ def log_move(source_path: str, source_to_destination_path: str) -> None:
 
 def log_not_found(path: str) -> None:
     """Log when a path/file doesn't exist."""
-    print(f"{Color.RED}Could not find {Color.YELLOW}{path}{Color.RESET}.")
+    print(f"{Color.RED}Could not find {Color.YELLOW}{path}{Color.RESET}")
 
 
 def main() -> None:
